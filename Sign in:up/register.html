@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Account</title>
+	<style type="text/css">
+	body{
+		background-color: black;
+	}
+
+
+	input{
+		margin: 0;
+		padding: 0;
+		background-color: white;
+	}
+	input{
+		display: inline-block;
+		background: white;
+	}
+	.container{
+		width: 100%;
+	}
+	.register-box{
+		position: relative;
+		height: 800px;
+		width: 800px;
+		top: 50px;
+		margin: 0 auto;
+		background-image: linear-gradient(#e66465, #9198e5);
+		border: 1px solid #ccc;
+	}
+	.title-box{
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		margin-left: 250px;
+		margin-top: 5px;
+		text-align: center;
+		font-size: 28px;
+		color: black;
+		line-height: 50px;
+	}
+	.username-box{
+		position: absolute;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:100px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.username-input{
+		display: inline-block;
+		margin-left: 90px;
+		
+	}
+	#username{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.userPassword-box{
+		position: absolute;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:180px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.userPassword-input{
+		display: inline-block;
+		margin-left: 100px;
+	}
+	#userPassword{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.userRePassword-box{
+		position: absolute;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:260px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.userRePassword-input{
+		display: inline-block;
+		margin-left: 28px;
+	}
+	#userRePassword{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.userPhone-box{
+		position: absolute;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:340px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.userPhone-input{
+		display: inline-block;
+		margin-left: 55px;
+	}
+	#userPhone{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+	.userEmail-box{
+		position: absolute;
+		width: 600px;
+		height: 40px;
+		line-height: 40px;
+		margin-top:420px;
+		margin-left:80px;
+		font-weight: 700;
+	}
+	.userEmail-input{
+		display: inline-block;
+		margin-left: 130px;
+	}
+	#userEmail{
+		height: 35px;
+		width: 290px;
+		border: 2px solid #ccc;
+		border-radius: 5px;
+	}
+
+	
+	.require{
+		color: red;
+	}
+	
+	#submit-button{
+		
+		position:absolute;
+		width: 80px;
+		height: 40px;
+		border-radius: 16px;
+		background: white;
+		font-weight: bolder;
+		font-size: 18px;
+		line-height: 40px;
+		margin-top: 580px;
+		margin-left: 34%;
+		border-radius: 16px;
+	}
+	.goLogin-box{
+		position:absolute;
+		width: 150px;
+		height: 20px;
+		margin-top: 585px;
+		margin-left:50%;
+		color: black;
+		font-weight: bolder;
+		font-size: 18px;
+ 
+	}
+ 
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="register-box">
+			<div class="title-box">
+				<span>Creat a new account</span>
+			</div>
+			<form action="" >
+				<div class="username-box">
+					<span class="require">*</span>
+					<label for="username">User name</label>
+					<div class="username-input">
+						<input type="text" id="username" name="username" placeholder="Please enter your user name" />
+					</div>
+				</div>
+ 
+				<div class="userPassword-box">
+					<span class="require">*</span>
+					<label for="userPassword">Password</label>
+					<div class="userPassword-input">
+						<input type="password" id="userPassword" name="userPassword" placeholder="Please enter your password." />
+					</div>
+				</div>
+ 
+				<div class="userRePassword-box">
+				<span class="require">*</span>
+						<label for="userRePassword">Confirm password</label>
+					<div class="userRePassword-input">
+						<input type="password" id="userRePassword" name="userRePassword" placeholder="Please enter your password again." />
+					</div>
+				</div>
+ 
+				<div class="userPhone-box">
+					<span class="require">*</span>
+					<label for="userPhone">Phone number</label>
+					<div class="userPhone-input">
+						<input type="text" id="userPhone" name="userPhone" placeholder="Please enter your phone number." />
+					</div>
+				</div>
+				
+				<div class="userEmail-box">
+					<span class="require">*</span>
+					<label for="userEmail">Email</label>
+					<div class="userEmail-input">
+						<input type="text" id="userEmail" name="userEmail" placeholder="Please enter your email."/>
+					</div>
+				</div>
+				
+				
+				<div class="submit-box">
+					<input id = "submit-button" type="submit" value="Register">
+				</div>
+				
+				<div class="goLogin-box">
+					<a href="" style="text-decoration: underline;">To log in</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
