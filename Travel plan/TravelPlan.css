@@ -7,12 +7,13 @@
 header{
 /*背景变暗*/
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("http://up.deskcity.org/pic_source/70/bf/fa/70bffad4d4ea498ede0baffbe62276b7.jpg");
-	height: 100vh;
+	height: 15vh;
 	background-size: cover;
 	background-position: center;
 }
 
 body{
+	font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -49,6 +50,53 @@ ul li.active a{
 
 
 
+
+.id{
+	background-color:black;
+}
+
+
+.grid-contanier {
+    display: grid;
+    grid-template-columns: 33% 34% 33% ;
+    background-color: white;
+    grid-template-rows: 300px 300px 300px ;
+    text-align: center;
+    grid-gap: 0px;
+
+}
+
+.grid-contanier2{
+    display: grid;
+    grid-template-columns: 50% 50%  ;
+    background-color: white;
+    grid-template-rows: 200px 200px  ;
+    text-align: center;
+    grid-gap: 10px;
+
+}
+
+a {
+    color: #4692e7;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+
+
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+
 .logo{
 	width: 150px;
 	float: left;
@@ -78,23 +126,15 @@ ul li.active a{
 	border:2px solid #ffff;
 	padding: 10px 30px;
 	color: #ffff;
-	font:normal 25px 'Source Sans Pro', sans-serif;
+	font:normal 15px 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 	transition: 0.6s ease;
+	background-color: royalblue;
 }
 .btn:hover{
 	background-color: #fff;
 	color: black;
 }
-
-
-
-
-
-
-
-
-
 
 
 
