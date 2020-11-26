@@ -7,13 +7,15 @@
 header{
 /*背景变暗*/
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("http://up.deskcity.org/pic_source/70/bf/fa/70bffad4d4ea498ede0baffbe62276b7.jpg");
-	height: 100vh;
+	height: 50vh;
 	background-size: cover;
 	background-position: center;
 }
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    background-image:url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+    background-color: #F8F9F9; 
 }
 
 ul{
@@ -86,6 +88,127 @@ ul li.active a{
 	background-color: #fff;
 	color: black;
 }
+
+
+
+
+
+
+ body{background-color: #E5E7E9;}
+
+
+
+ 
+
+
+ .PeopleSize{
+	 color: white;
+	 display: flex ;
+     flex-direction: row;
+    
+      
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-100%);
+    background: #656567;
+    height: 80px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+
+}
+
+ button {
+      background-color: grey ;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 20 32px;
+      margin-top: 10px;
+      width: 8%;
+      height: 60%;
+    }
+
+
+
+
+div.img {
+    margin: 20px;
+    border: 1px solid #ccc;
+    float: row;
+    max-width:1000px;_width:expression(this.width > 1000 ? "1000px" : this.width);
+    max-height:1000px;_width:expression(this.height > 1000 ? "1000px" : this.height);
+  
+}
+
+
+div.img:hover {
+    border: 1px solid #777
+    ;
+}
+
+div.img img {
+    margin: 5px;
+
+    max-width:1000px;_width:expression(this.width > 1000 ? "1000px" : this.width);
+  	max-height:1000px;_width:expression(this.height > 1000 ? "1000px" : this.height);
+}
+
+div.desc {
+    
+     padding: 0 80px;
+    
+    display: inline-block;
+  
+   
+}
+
+
+
+ #go_to {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+ .right {
+	     position:absolute;
+    	left:1100px;
+    	top:700px;
+	    width: 20%;
+	    height: 80%;
+	    border: 1px solid #ccc;
+	    padding: 0 20px;
+        
+	}
+.right label{
+		font-size:20px;
+}
+    .right button{
+            border:none;
+            
+            margin-left: 23%;
+            margin-top: 20%;
+            width:60%;
+            height:5%;
+            background:#656567 ;
+            color: #fff;
+            
+        }
+
+       
+.like{ font-size:35px;  
+	color:#ccc; 
+	cursor:pointer;
+	margin-left: 480px;
+	margin-top: -35px;
+}
+.like-A{color:#C0392B}
+
+
+
+
 
 
 
