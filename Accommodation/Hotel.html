@@ -6,25 +6,289 @@
   <link rel="stylesheet" type="text/css" href="Hotel.css">
   <!--FONTS-->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+
  </head>
 <body>
-	<header>
-		<div class="main">
-			<div class="logo">
-				<img class="logo" src="sunshine.png">
-			</div>
-			<ul>
-				<li class="#"><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Sign up/in</a></li>
-				<li ><a href="#">Travel Plan</a></li>
-				<li class="active"><a href="#">Hotel</a></li>
-				<li><a href="#">Play & Eat</a></li>				
-			</ul>
-			
-		</div>
-		
-	</header>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img class="logo" src="sunshine.png">
+            </div>
+            <ul>
+                <li class="#"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign up/in</a></li>
+                <li ><a href="#">Travel Plan</a></li>
+                <li class="active"><a href="#">Hotel</a></li>
+                <li><a href="#">Play & Eat</a></li>
+
+
+               
+            </ul>
+            
+              </div>
+
+
+
+        <form>
+       <fieldset class="Apa"> 
+
+ 
+ 
+   <label for="People" style="font: normal bolder 15px 'Source Sans Pro', sans-serif;">Guest:</label><br>
+   &nbsp&nbsp
+
+   <select name="People" id="People">
+     <option value="one adult" >one adult</option>
+     <option value="two adult" >two adult</option>
+     <option value="two adult with children">two adult with children</option>
+   </select>
+   &nbsp&nbsp&nbsp&nbsp
+
+   <br><br>
+   
+
+   &nbsp&nbsp&nbsp
+   <label for="day" style="font: normal bolder 15px 'Source Sans Pro', sans-serif;">Check in:<br></label>
+   <input type="date" id="day" name="day" ><br><br>
+   &nbsp&nbsp&nbsp
+
+   &nbsp<label for="day" style="font: normal bolder 15px 'Source Sans Pro', sans-serif;">Check out:<br></label>
+   &nbsp<input type="date" id="day" name="day" ><br><br>
+   &nbsp&nbsp&nbsp&nbsp
+    <button id="search" onclick="goToHotel();" style="font: normal bolder 14px 'Source Sans Pro', sans-serif;">search</button>
+  
+  <br><br>
+   </fieldset>
+   <br>   
+ 
+  
+ 
+ 
+
+ </fieldset>
+
+      
+
+
+        
+
+        
+</header>
+ 
+
+
+
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-o/0c/f3/70/fb/caption.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/0c/f3/70/fb/caption.jpg" alt="images" width="300" height="200" align="top">
+    </a>
+    <div class="desc">  
+     <p id="1"></p>
+                  <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">Novotel Xian SCPG</p>
+                  <p class="like"> &#9829;</p>
+                  <p style="font-size:20px;text-decoration: line-through; "> C$ 56</p><br/>
+                  <p style="font-size:40px;text-decoration: underline; color: #FF5733"> C$ 46</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+                      <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                     
+                        No.33 Weiyang Road, Xi'an 710016 China
+<br/>
+                        
+                      </p></div>
+  </div>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/2d/cc/37/caption.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/2d/cc/37/caption.jpg" alt="images" width="300" height="200">
+    </a>
+    <div class="desc">  <p id="2"></p>
+      <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">Renaissance Xi'an Hotel</p>
+                      
+                      
+                  
+                  <p class="like"> &#9829;</p>
+                  
+                  <p style="font-size:40px; color: #FF5733" > C$ 58</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+  
+                     <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                      <p>
+                       No.355 Huixin Road, Qujiang New Area, Xi'an 710065 China</p></div>
+                       
+  </div>
+</div>
+
+
+ 
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-o/0a/f1/43/3a/getlstd-property-photo.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-o/0a/f1/43/3a/getlstd-property-photo.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc"><p id="3">
+      
+    </p> <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">Renaissance Xi'an Hotel</p>
+                      
+                     
+                  
+                  <p class="like"> &#9829;</p>
+                  
+                  <p style="font-size:40px; color: #FF5733" > C$ 58</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+  
+                     <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                      <p>
+                       No.355 Huixin Road, Qujiang New Area, Xi'an 710065 China</p></div>
+                       
+  </div>
+</div>
+
+
+
+ 
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc"><p id="4"></p>
+     <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">HUALUXE Xi'an Tanghua</p>
+                      
+                      
+                  
+                  <p class="like"> &#9829;</p>
+                  
+                  <p style="font-size:40px; color: #FF5733" > C$ 58</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+  
+                      <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                      <p>
+                      No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China</p></div>
+                       
+  </div>
+</div>
+
+
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc"> <p id="abc"></p>
+      <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">HUALUXE Xi'an Tanghua</p>
+                      
+                     
+                   <p class="like"> &#9829;</p>
+                 
+                  
+                  <p style="font-size:40px; color: #FF5733" > C$ 58</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+  
+                      <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                      <p>
+                      No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China</p></div>
+                       
+  </div>
+</div>
+
+
+<div class="Hotel">
+  <div class="img">
+    <a target="_blank" href="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/7d/35/47/exterior.jpg" alt="图片文本描述" width="300" height="200">
+    </a>
+    <div class="desc"><p id="6"></p>
+     <p style="color:#656567;font: normal bolder 30px 'Source Sans Pro', sans-serif;">HUALUXE Xi'an Tanghua</p>
+                      
+                     
+                   <p class="like"> &#9829;</p>
+                 
+                  
+                  <p style="font-size:40px; color: #FF5733" > C$ 58</p><br/>
+
+
+                     <button style=" height: 20px; width: 80px" onclick="checkMore()">Check More</button><br><br>
+  
+                      <p style="color: #F08080"> &#9733;&#9733;&#9733;&#9733;&#9733;888 reviews</p>
+                      <p>
+                      No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China</p></div>
+                       
+  </div>
+</div>
+
+
+
+
+
+   
+<div class="right">
+
+  <br><br>
+  
+   <label for="oo">Popular:</label><br>
+   <br><br>
+   <input type="checkbox" id="start" name="oo" value="start">
+   <label for="start">5 stars</label><br>
+   <input type="checkbox" id="Breakfast" name="oo" value="Breakfast">
+   <label for="Breakfast">Breakfast included</label><br>
+   <input type="checkbox" id="Air" name="oo" value="Air">
+   <label for="Air">Air conditioning</label><br><br>
+   <br>
+
+ <HR style="border:3 double #987cb9" width="100%" color=#ccc SIZE=3>
+ <br><br>
+
+   <label for="oo">Features:</label><br>
+   <br>
+   <input type="checkbox" id="Amenities" name="Amenities" value="Amenities">
+   <label for="Amenities">Amenities</label><br>
+   <input type="checkbox" id="Wifi" name="Wifi" value="Wifi">
+   <label for="Wifi">Free Wifi</label><br>
+   <input type="checkbox" id="Pool" name="Pool" value="Pool">
+   <label for="Pool">Pool</label><br>
+   <input type="checkbox" id="parking" name="parking" value="parking">
+   <label for="parking">Free parking</label>
+   <br><br>
+
+ <HR style="border:3 double #987cb9" width="100%" color=#ccc SIZE=3>
+
+  <button id="ChooseP1" onclick="ChooseP();" style="font: normal bolder 15px 'Source Sans Pro', sans-serif; ">search</button>
+
+
+</div>
+
+
+  
+
+
 
 
 
@@ -37,4 +301,130 @@
 
 
 </body>
+
+
+<script type="text/javascript" src="jquery-3.0.0.min.js">
+  
+</script>
+<script type="text/javascript">
+   
+
+         
+     
+    function goToHotel() {
+               
+        var select =document.getElementById("People");
+       
+
+           if (select.value== "one adult") {
+               window.location.hash = "#6";
+           }
+            else if (select.value== "two adult") {
+               window.location.hash = "#1";
+           }
+
+            else if (select.value== "two adult with children") {
+               window.location.hash = "#3";
+           }
+
+
+          
+            
+}
+
+      
+
+
+      function ChooseP(){
+        var start =document.getElementById("start");
+        var Breakfast =document.getElementById("Breakfast");
+
+           if (start.checked==true) {
+               window.location.hash = "#6";
+           }
+            else if (Breakfast.checked==true) {
+               window.location.hash = "#1";
+           }
+
+           else{
+            window.location.hash = "#3";
+           }
+           
+
+      }
+
+
+
+
+
+    function changeColor()
+{
+    document.getElementById("button").style.background= "red";
+}
+  
+  function checkMore()
+  {
+  window.open('http://www.google.com');
+  }
+
+
+
+ //map
+
+</script>
+ <script src= "js/jquery.min.js"></script>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="">
+
+        
+            
+        var mymap =null;        
+        </script>
+
+         <div id="mapid" style="width: 200px; height: 200px; position:absolute;
+      left:1100px;top:60%;">
+          
+      </div>
+            <p style="color:#656567;font-family:arial;font-size:30px;left:1100px;top:55%; position:absolute;">View Map</p>
+
+        <script type="text/javascript">
+            
+            //Initialize Map    
+            var Lat = 34.3194333;
+            var Long = 108.9426544;
+            
+            //mapid is the id for your div element
+            //You can leave the rest as it is
+            mymap = L.map('mapid').setView([Lat, Long], 10);            
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href=" ">OpenStreetMap</a > contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a >, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a >',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+            var marker = L.marker([34.3194333,108.9426544]).addTo(mymap);
+            marker.bindPopup("<b>Novotel Xian SCPG </b>").openPopup();
+
+            var marker = L.marker([34.2795641,108.9576984]).addTo(mymap);
+            marker.bindPopup("<b>Renaissance Xi'an Hotel</b>").openPopup();
+
+               
+   </script>
+
+<script typet="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    <script>
+        $(function () {            
+            $(".like").click(function () {
+                $(this).toggleClass('like-A');                
+            })
+        })
+    </script>
+
 </html>
+
+
+
