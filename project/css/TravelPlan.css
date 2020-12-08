@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{ vertical-align:middle;}
+header {
+	/*背景变暗*/
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/70bffad4d4ea498ede0baffbe62276b7.jpg");
+	height: 280px;
+	background-size: cover;
+	background-position: center;
+}
+body {
+	font-size: 30px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.PeopleSize {
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	background: rgba(101, 101, 103, 0.01);
+	height: 100px;
+	border-radius: 20px;
+	padding: 20px;
+	width: 60%;
+	margin:20px auto;
+}
+.PeopleSize button {
+	background-color: rgba(101, 101, 103, 0.26);
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	width: 180px;
+	height: 50px;
+}
+ul {
+	float: left;
+	list-style-type: none;
+}
+
+ul li {
+	/*全部一行显示*/
+	display: inline-block;
+	font: normal bolder 20px 'Source Sans Pro', sans-serif;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid transparent;
+	/*消失用0.8秒*/
+	transition: 0.8s ease;
+}
+ul li a:hover {
+	background-color: #fff;
+	color: black;
+}
+
+/*home始终有颜色*/
+ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+.id {
+	background-color: black;
+}
+.grid-contanier {
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+	background-color: white;
+	grid-template-rows: 300px 300px 300px;
+	text-align: center;
+	grid-gap: 0px;
+}
+.grid-contanier2 {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background-color: white;
+	grid-template-rows: 200px;
+	text-align: center;
+}
+.grid-contanier3 {
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+	background-color: white;
+	grid-template-rows: 300px 300px 300px;
+	text-align: center;
+	grid-gap: 0px;
+	height: 875px;
+}
+a {
+	color: #4692e7;
+	text-decoration: none;
+	background-color: transparent;
+}
+.img {
+	vertical-align: middle;
+	border-style: none;
+}
+form {
+	display: block;
+	margin-top: 0em;
+}
+.logo {
+	width: 150px;
+}
+.main {
+	max-width: 1400px;
+	margin: auto;
+	display:flex; justify-content:space-between; align-items:center;
+}
+.cart{ vertical-align:middle; color:#fff; font-size:16px; font-weight:
+bold;}
+.red{ color:red;}
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title h1 {
+	color: #ffff;
+	font-size: 50px;
+}
+.Btn {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn {
+	border: 2px solid #ffff;
+	padding: 10px 30px;
+	color: #ffff;
+	font: normal 15px 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	transition: 0.6s ease;
+	background-color: royalblue;
+}
+.btn:hover {
+	background-color: #fff;
+	color: black;
+}

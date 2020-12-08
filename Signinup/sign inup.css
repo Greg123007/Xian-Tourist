@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+header{
+
+	height: 25vh;
+	background-size: cover;
+	background-position: center;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("http://up.deskcity.org/pic_source/70/bf/fa/70bffad4d4ea498ede0baffbe62276b7.jpg"); 
+}
+
+ul{
+	float: left;
+	list-style-type: none;
+	margin-top: 35px;
+	margin-left: 200px;
+}
+ul li{
+
+	display: inline-block;
+	font: normal bolder 20px 'Source Sans Pro', sans-serif;
+
+
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;
+	border: 2px solid transparent;
+	
+	transition: 0.8s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: black;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+.logo{
+	width: 150px;
+	float: left;
+}
+.main{
+	max-width: 1400px;
+	margin:auto;
+}
+.title{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color: #ffff;
+	font-size: 50px;
+
+}
+.Btn{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.btn{
+	border:2px solid #ffff;
+	padding: 10px 30px;
+	color: #ffff;
+	font:normal 25px 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color: black;
+}
+
+
+.reg{
+	width:650px;
+	height:auto;
+	margin: auto;
+
+}
+ 
+.content{
+	border:1px solid #DBDBDB;
+	color:#003976;
+	background:#F9F9F9;
+	text-align:left;
+	border-radius: 15px;
+}
+
+
+input#submit-button,#reset-button{
+	text-align: center;
+	color:#FFFFFF;
+	width: 80px;
+	height: 40px;
+	color: black;
+	border-radius: 16px;
+}
+
+table{
+	border-spacing: 15px;
+}
+
+span{
+	color: red;
+}
+
+.s1{
+	color: white;
+}
+tr#info
+{
+	color: red;
+	font-size: 16px;	
+}
+
+
+/*verCode*/
+
+
+.code
+    {
+         font-family:Arial;
+         font-style:italic;
+         color:blue;
+         font-size:30px;
+         border:0;
+         padding:2px 3px;
+         letter-spacing:3px;
+         font-weight:bolder;            
+         float:left;           
+         cursor:pointer;
+         width:150px;
+         height:50px;
+         line-height:60px;
+         text-align:center;
+         vertical-align:middle;
+         background-color:#30d5c8;
+}
+span#changeCode{
+        text-decoration:none;
+        font-size:18px;
+        color:black;
+}
+span#changeCode:hover {
+        text-decoration:underline;
+        cursor:pointer;
+}
+
+
+.logIn{
+	width:430px;
+	height:auto;
+	margin: auto;
+}
+
+input#login_button{
+	text-align: center;
+	margin-left: 30px;
+	font-size: 18px;
+	color:#FFFFFF;
+	width: 80px;
+	height: 40px;
+	color: black;
+	border-radius: 16px;
+
+}
+
+input#login_button:hover{
+	background-color: #C0C0C0;
+	font-weight: bolder;
+}
+
+.cart {
+	vertical-align: middle;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+}
+.cart img {
+	vertical-align: middle;
+}
+.red {
+	color: red;
+}

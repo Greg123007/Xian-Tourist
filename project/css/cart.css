@@ -1,0 +1,60 @@
+/* CSS Document */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a {
+    display: block;
+    width: 250px;
+    line-height: 36px;
+    text-align: center;
+    background: Gold;
+}
+
+.nav ul li a:hover {
+    font-weight: bold;
+}
+
+.nav ul li a.on {
+    font-weight: bold;
+}
+
+
+.r-main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+h1 {
+    line-height: 60px;
+}
+
+.r-main table th {
+    height: 80px;
+}
+
+.r-main table td {
+    height: 60px;
+    text-align: center;
+}
+
+.r-main table td input {
+    width: 50px;
+    border: 1px solid #ccc;
+}
+
+.r-main table button, .r-main table a {
+    border: 1px solid Gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+    background: #F0EADC;
+}

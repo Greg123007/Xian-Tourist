@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	/*背景变暗*/
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://up.deskcity.org/pic_source/70/bf/fa/70bffad4d4ea498ede0baffbe62276b7.jpg");
+	height: 280px;
+	background-size: cover;
+	background-position: center;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+	background-color: #F8F9F9;
+}
+ul {
+	float: right;
+	list-style-type: none;
+}
+ul li {
+	/*全部一行显示*/
+	display: inline-block;
+	font: normal bolder 20px 'Source Sans Pro', sans-serif;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid transparent;
+	/*消失用0.8秒*/
+	transition: 0.8s ease;
+}
+ul li a:hover {
+	background-color: #fff;
+	color: black;
+}
+/*home始终有颜色*/
+ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+.logo {
+	width: 150px;
+}
+.main {
+	max-width: 1400px;
+	margin: auto;
+}
+header .main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cart {
+	vertical-align: middle;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.cart img {
+	vertical-align: middle;
+}
+.red {
+	color: red;
+}
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.title h1 {
+	color: #ffff;
+	font-size: 50px;
+}
+.Btn {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn {
+	border: 2px solid #ffff;
+	padding: 10px 30px;
+	color: #ffff;
+	font: normal 25px 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover {
+	background-color: #fff;
+	color: black;
+}
+body {
+	background-color: #E5E7E9;
+}
+.PeopleSize {
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	background: #656567;
+	height: 100px;
+	border-radius: 20px;
+	padding: 20px;
+	width: 60%;
+	margin:20px auto
+	;
+}
+.PeopleSize button {
+	background-color: grey;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	width: 80px;
+	height: 30px;
+}
+div.img {
+	margin: 20px;
+	border: 1px solid #ccc;
+	float: row;
+	max-width: 1000px;
+_width:expression(this.width > 1000 ? "1000px" : this.width);
+	max-height: 1000px;
+_width:expression(this.height > 1000 ? "1000px" : this.height);
+}
+div.img:hover {
+	border: 1px solid #777;
+}
+div.img img {
+	margin: 5px;
+	max-width: 1000px;
+_width:expression(this.width > 1000 ? "1000px" : this.width);
+	max-height: 1000px;
+_width:expression(this.height > 1000 ? "1000px" : this.height);
+}
+div.desc {
+	padding: 0 80px;
+	display: inline-block;
+}
+#go_to {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+.right {
+	position: absolute;
+	left: 1100px;
+	top: 580px;
+	width: 20%;
+	/*height: 80%;*/
+	border: 1px solid #ccc;
+	padding: 0 20px;
+}
+.sort {
+	width: 20%;
+	border: 1px solid #ccc;
+	position: absolute;
+	padding: 20px 0;
+	top: 52%;
+	left: 1100px;
+	display: flex;
+	justify-content: space-around;
+}
+.sort button {
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 0;
+	background: #003399;
+	cursor: pointer;
+	color:#fff;
+}
+.sort button:hover {
+	background: #CC0033;
+}
+.right label {
+	font-size: 20px;
+}
+.right button {
+	border: none;
+	margin-left: 23px;
+	margin-top: 10px;
+	width: 140px;
+	height: 30px;
+	background: #656567;
+	color: #fff;
+}
+.like {
+	font-size: 35px;
+	color: #ccc;
+	cursor: pointer;
+	margin-left: 480px;
+	margin-top: -35px;
+}
+.like-A {
+	color: #C0392B
+}
+.add{ width:80px; height:20px; background:red; color:#fff; border:1px solid #000; margin-left:20px;}

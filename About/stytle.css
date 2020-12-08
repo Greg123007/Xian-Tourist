@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.getFrom{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.mainBody{
+    padding-left: 20px;
+    padding-right: 30px;
+    font-family: "Courier New";
+    text-align: justify;
+}
+
+
+/*https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    padding-left: 60px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: lightseagreen;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    /*width: 100%;*/
+    font-size: 18px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+
+.lastPart {
+    padding-left: 20px;
+    padding-right: 100px;
+    font-family: "Courier New";
+    text-align: justify;
+}
+
+.askQ {
+    text-align: center;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.9);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.contact{
+    text-align: justify;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+legend{
+    font-size: 30px;
+    text-align: center;
+}
+
+.input{
+    border-radius: 5px;
+    size: 100px;
+}
+
+.inputSel{
+    border-radius: 5px;
+    size: 100px;
+}
+
+
+
+
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+header{
+    /*背景变暗*/
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("http://up.deskcity.org/pic_source/70/bf/fa/70bffad4d4ea498ede0baffbe62276b7.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul{
+    float: left;
+    list-style-type: none;
+    margin-top: 35px;
+    margin-left: 180px;
+}
+ul li{
+    /*全部一行显示*/
+    display: inline-block;
+    font: normal bolder 20px 'Source Sans Pro', sans-serif;
+
+
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    /*消失用0.8秒*/
+    transition: 0.8s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+/*home始终有颜色*/
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.logo{
+    width: 150px;
+    float: left;
+}
+.main{
+    max-width: 1400px;
+    margin:auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #ffff;
+    font-size: 50px;
+
+}
+.Btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border:2px solid #ffff;
+    padding: 10px 30px;
+    color: #ffff;
+    font:normal 25px 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.cart {
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+}
+.cart img {
+    vertical-align: middle;
+}
+.red {
+    color: red;
+}

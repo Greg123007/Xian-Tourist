@@ -1,0 +1,5 @@
+1001|Novotel Xian SCPG|No.33 Weiyang Road, Xi'an 710016 China|333|88.00|Novotel Xian SCPG.jpg|★★★★|one-adult|
+1002|Renaissance Xi'an Hotel|No.355 Huixin Road, Qujiang New Area, Xi'an 710065 China|444|58.00|Renaissance Xi'an Hotel.jpg|★★★★★|two adult-with-children|
+1003|HUALUXE Xi'an Tanghua|No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China|555|77.00|HUALUXE Xi'an Tanghua.jpg|★★★★★|one-adult|
+1004|W hotel in Xi'an|No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China|666|60.00|W hotel in Xi'an.jpg|★★★|two-adult|
+1005|Westin Hotel|No.40, Yanyin Road, Qujiang New District, Xi'an 710061 China|888|88.00|Westin.jpg|★★★★|two-adult|

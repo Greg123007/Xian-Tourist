@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	/*背景变暗*/
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/70bffad4d4ea498ede0baffbe62276b7.jpg");
+	background-size: cover;
+	height: 280px;
+	background-position: center;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/70bffad4d4ea498ede0baffbe62276b7.jpg");
+}
+ul {
+	float: right;
+	list-style-type: none;
+}
+ul li {
+	/*全部一行显示*/
+	display: inline-block;
+	font: normal bolder 20px 'Source Sans Pro', sans-serif;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 2px solid transparent;
+	/*消失用0.8秒*/
+	transition: 0.8s ease;
+}
+ul li a:hover {
+	background-color: #fff;
+	color: black;
+}
+/*home始终有颜色*/
+ul li.active a {
+	background-color: #fff;
+	color: #000;
+}
+.logo {
+	width: 150px;
+	float: left;
+}
+.main {
+	max-width: 1400px;
+	margin: auto;
+	color: #fff;
+}
+header .main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cart {
+	vertical-align: middle;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+.cart img {
+	vertical-align: middle;
+}
+.red {
+	color: red;
+}
+.container {
+	background: rgba(255,255,255,.6);
+	min-height: 800px;
+}
+.container table {
+	max-width: 1200px;
+	margin: auto;
+}
+.container table caption {
+	padding: 50px 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+.container table td {
+	text-align: center;
+	height: 60px;
+	background: #fff;
+	border-top: 1px solid #000;
+}
+.container table th {
+	height: 60px;
+	color: red;
+	background: #fff;
+	font-size: 20px;
+}
+.operation button {
+	padding: 5px 15px;
+	background: #000;
+	color: #fff;
+	border-radius: 5px;
+}
+td.nub span {
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	border: 1px solid #000;
+}
+td.nub button {
+	border: 1px solid red;
+	background: red;
+	color: #fff;
+	height: 24px;
+	border-radius: 5px;
+	margin-left: 10px;
+	padding: 0 10px;
+}
+.container table tr.rst td {
+	font-size: 24px;
+	font-weight: bold;
+	height: 100px;
+}
+.box{ max-width:1200px; margin:auto; min-height:500px; display:flex; flex-direction:column; align-items:center; justify-content:space-around; color:red;}
+.box .backhome a{ display:inline-block; background:#000; padding:10px 20px; border-radius:10px; color:#fff; text-decoration:none;}
